@@ -1,0 +1,4 @@
+#Quick Blow skill Macro
+#Data: SUSPEND_SKILLS (string)
+
+set SUSPEND_SKILLS %string(Dodge|Block|Cap|Taunt,invoke==6||invoke==11)

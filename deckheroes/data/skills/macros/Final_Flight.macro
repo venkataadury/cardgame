@@ -1,0 +1,8 @@
+#Final Flight skill macro
+#Data: SKILL_LEVEL (int), oppHP (int)
+##(Direct Damage)
+
+%print_text(src,FINAL FLIGHT,black)
+var dmg {SKILL_LEVEL}*40
+set oppHP {oppHP}-$dmg
+%print_text(targ,$dmg,red)

@@ -1,0 +1,6 @@
+#Mass Heal skill macro
+#Data: SKILL_LEVEL (int), oppHP (int)
+
+var heal 25*{SKILL_LEVEL}
+set oppHP {oppHP}+$heal
+%print_text(targ,$heal,green)

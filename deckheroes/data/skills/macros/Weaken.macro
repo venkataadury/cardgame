@@ -1,0 +1,9 @@
+#Weaken skill macro
+#Data: oppATT (int), SKILL_LEVEL (int)
+
+var red 20*{SKILL_LEVEL}
+copydata oppATT targATT
+if %modreq(targ)
+set targATT {targATT}-$red
+%print_text(targ,$red,pink)
+endif

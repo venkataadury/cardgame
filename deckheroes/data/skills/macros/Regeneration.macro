@@ -1,0 +1,6 @@
+#Regeneration skill macro
+#Data: HP (int), SKILL_LEVEL (int)
+
+var heal 20*{SKILL_LEVEL}
+set HP {HP}+$heal
+%print_text(src,$heal,green)

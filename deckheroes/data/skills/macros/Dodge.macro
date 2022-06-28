@@ -1,0 +1,9 @@
+#Dodge skill macro
+#Data: SKILL_LEVEL (int), DAMAGE (int)
+
+var dp {SKILL_LEVEL}*10
+var rn %random(%range(1,100))
+if $rn <= $dp
+	%print_text(src,DODGED,blue)
+	set DAMAGE 0
+endif

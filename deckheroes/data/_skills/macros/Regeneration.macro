@@ -1,0 +1,4 @@
+#Regeneration skill macro
+#Data: HP (int), SKILL_LEVEL (int)
+
+set HP {HP}+20*{SKILL_LEVEL}

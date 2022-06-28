@@ -1,0 +1,9 @@
+#blaze macro
+#Data HP (int), STATUS_LEVEL (int)
+
+var dmg {STATUS_LEVEL}*25
+if {faction}==fire
+	var dmg $dmg/2
+endif
+set HP {HP}-$dmg
+%print_text(src,Blaze: $dmg,red)

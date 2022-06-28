@@ -1,0 +1,11 @@
+#Untouchability skill macro
+#Data: SKILL_LEVEL (int), IMMUNITY (int)
+
+var pc {SKILL_LEVEL}*10
+var rn %range(1,100)
+var rand %random($rn)
+print $rand
+if $rand <= $pc
+	%print_text(src,UNTOUCHED,blue)
+	set IMMUNITY 1
+endif

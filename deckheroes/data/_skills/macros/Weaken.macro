@@ -1,0 +1,4 @@
+#Weaken skill macro
+#Data: oppATT (int), SKILL_LEVEL (int)
+
+set oppATT {oppATT}-20*{SKILL_LEVEL}

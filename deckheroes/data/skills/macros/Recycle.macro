@@ -1,0 +1,10 @@
+#Recycle skill macro
+#Data: SKILL_LEVEL (int) ?
+##(Direct Damage)
+
+%print_text(src,RECYCLE,black)
+%recycle(deck)
+#%clear_text()
+#if {SKILL_LEVEL} >1
+#%rebirth(deck)
+#endif

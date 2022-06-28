@@ -1,0 +1,9 @@
+#Whirlwind skill macro
+#Data: SKILL_LEVEL (int), MAGIC_DAMAGE (int)
+##(Direct Damage)
+
+%print_text(src,WHIRLWIND,black)
+var dmg {SKILL_LEVEL}*30
+if %modreq(targ)
+set MAGIC_DAMAGE $dmg
+endif

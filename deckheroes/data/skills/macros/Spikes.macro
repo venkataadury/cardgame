@@ -1,0 +1,9 @@
+#Spikes skill macro
+#Data: SKILL_LEVEL (int), MAGIC_DAMAGE (int), oppHP (int)
+
+var pc {SKILL_LEVEL}*0.05
+var dmg $pc*{MAGIC_DAMAGE}
+set MAGIC_DAMAGE {MAGIC_DAMAGE}-$dmg
+set oppHP {oppHP}-$dmg
+%print_text(src,Spikes,pink)
+%print_text(targ,$dmg,red)

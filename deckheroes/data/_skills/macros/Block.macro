@@ -1,0 +1,9 @@
+#Block skill macro
+#Data: SKILL_LEVEL (int), DAMAGE (int)
+
+var cap {SKILL_LEVEL}*20
+if {DAMAGE} <= $cap
+	set DAMAGE 0
+	exit
+endif
+set DAMAGE {DAMAGE}-$cap

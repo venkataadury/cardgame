@@ -1,0 +1,5 @@
+#Spikes skill macro
+#Data: SKILL_LEVEL (int), DAMAGE (int), oppHP (int)
+
+var pc {SKILL_LEVEL}*5
+set oppHP {oppHP}-pc*{DAMAGE}

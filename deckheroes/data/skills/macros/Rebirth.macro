@@ -1,0 +1,11 @@
+#Rebirth skill macro
+#Data: SKILL_LEVEL (int)
+##(Direct Damage)
+
+var rbp {SKILL_LEVEL}*8
+var rn %random(%range(1,100))
+if $rn <= $rbp
+%print_text(src,REBIRTH,black)
+%rebirth(deck)
+endif
+

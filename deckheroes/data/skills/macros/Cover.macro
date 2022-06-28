@@ -1,0 +1,8 @@
+#Cover skill Macro
+#Data: oppfaction (string), ATT (int), SKILL_LEVEL (int)
+
+if {oppfaction} == water
+	var boost {ATT}*0.15*{SKILL_LEVEL}
+        %print_text(src,$boost,deep_yellow)
+        set ATT {ATT}+$boost
+endif

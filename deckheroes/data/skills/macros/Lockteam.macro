@@ -1,0 +1,7 @@
+#Lockteam skill macro
+#Data: round (int)
+##(Direct Damage)
+
+if %status_effect(targ,FreqDelay,1)
+	%print_text(src,Lockteam,black)
+endif

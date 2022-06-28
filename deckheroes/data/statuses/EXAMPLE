@@ -1,0 +1,6 @@
+EXAMPLE
+DESC
+When to invoke (0-Start of turn, 1-Just Before ATT, 2-End of Turn)
+Invocation Freq (1 - Every round, 2- Every alternate round ..)
+Invocation limit (0 - infinity)
+Stack limit (How many times effect can be stacked. [Default=1])

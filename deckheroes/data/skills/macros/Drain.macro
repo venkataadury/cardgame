@@ -1,0 +1,7 @@
+#Drain skill macro
+#Data: HP (int), SKILL_LEVEL (int), DAMAGE_DEALT (int)
+
+var pc {SKILL_LEVEL}*0.05
+var heal {DAMAGE_DEALT}*$pc
+set HP {HP}+$heal
+%print_text(src,$heal,green)

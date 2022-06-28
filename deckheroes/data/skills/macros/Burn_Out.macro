@@ -1,0 +1,6 @@
+#Burn Out skill macro
+#Data: <null>
+##(Direct Damage)
+
+%string(%print_text(src,BURN OUT!,black))
+%burst_grave()

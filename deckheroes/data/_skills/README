@@ -1,0 +1,9 @@
+The pattern for skills is as follows:
+
+Filename should be skill name (Case sensitive)
+In file:-
+
+Skill Name
+Description
+Macro name (with respect to root_game_folder/data/macros)
+Activation (0-On start of turn, 1-Just before attack, 2-End of Turn, 3-When Played, 4-When dead, 5-When opposite card dies,6-When taking attack damage,7-when taking magic damage,8-Just after attacking)

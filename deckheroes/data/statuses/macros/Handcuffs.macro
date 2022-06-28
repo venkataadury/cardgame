@@ -1,0 +1,4 @@
+#delay macro
+#Data SUSPEND_ATT (int), SUSPEND_SKILL (string)
+
+set SUSPEND_ATT 1

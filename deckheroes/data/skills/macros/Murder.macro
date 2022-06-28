@@ -1,0 +1,12 @@
+#Murder skill macro
+#Data: SKILL_LEVEL (int), STATUS_EFFECT (string), oppX,oppY (int.int)
+##(Direct Damage)
+
+%print_text(src,MURDER,black)
+copydata oppHP targHP
+set STATUS_EFFECT Murder
+if %modreq(targ)
+	%animate({oppX},{oppY})
+	%print_text(targ,KILLED,red)
+	set targHP 0
+endif

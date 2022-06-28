@@ -1,0 +1,7 @@
+#Protected skill macro
+#Data: IMMUNITY (int), STATUS_EFFECT (string)
+
+if %like({STATUS_EFFECT},Intervention|Murder)
+	%print_text(src,PROTECTED,blue)
+	set IMMUNITY 1
+endif

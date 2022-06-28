@@ -1,0 +1,10 @@
+#Sap skill macro
+#Data: MaxHP (int), HP (int), ATT (int), SKILL_LEVEL (int), DAMAGE_DEALT (int)
+
+var pc {SKILL_LEVEL}*0.10
+var heal {DAMAGE_DEALT}*$pc
+set HP {HP}+$heal
+set MaxHP {MaxHP}+$heal
+%print_text(src,$heal,green)
+set ATT {ATT}+$heal
+%print_text(src,$heal,yellow)

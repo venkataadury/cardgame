@@ -1,0 +1,7 @@
+#Unbound skill macro
+#Data: IMMUNITY (int), STATUS_EFFECT (string)
+
+if %like({STATUS_EFFECT},Handcuffs|Delay)
+	%print_text(src,UNBOUND,blue)
+	set IMMUNITY 1
+endif

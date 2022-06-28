@@ -1,0 +1,8 @@
+#Rage skill macro
+#Data: HP (int), SKILL_LEVEL (int), ATT (int)
+
+var inc 20*{SKILL_LEVEL}
+if {HP} > $inc
+	set HP {HP}-$inc
+	set ATT {ATT}+$inc
+endif

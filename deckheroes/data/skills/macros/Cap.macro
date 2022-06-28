@@ -1,0 +1,9 @@
+#Cap skill macro
+#Data: SKILL_LEVEL (int), DAMAGE (int)
+
+var cap 220-20*{SKILL_LEVEL}
+if {DAMAGE} <= $cap
+	exit
+endif
+set DAMAGE $cap
+%print_text(src,CAP: $cap,grey)

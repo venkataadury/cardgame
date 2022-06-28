@@ -1,0 +1,6 @@
+#Blow skill Macro
+#Data: oppfaction (string), ATT (int), SKILL_LEVEL (int)
+
+if {oppfaction} == earth
+	set ATT {ATT}*0.2*{SKILL_LEVEL}
+endif

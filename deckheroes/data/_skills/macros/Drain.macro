@@ -1,0 +1,5 @@
+#Drain skill macro
+#Data: HP (int), SKILL_LEVEL (int), DAMAGE_DEALT (int)
+
+var pc {SKILL_LEVEL}*0.05
+set HP {HP}+{DAMAGE_DEALT}*$pc

@@ -1,0 +1,6 @@
+#Intervention skill macro
+#Data: SKILL_LEVEL (int)
+##(Direct Damage)
+
+%print_text(src,INTERVENTION,black)
+%intervention()

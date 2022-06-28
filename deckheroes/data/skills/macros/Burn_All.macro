@@ -1,0 +1,5 @@
+#Burn All skill macro
+#Data: SKILL_LEVEL (int)
+
+%print_text(src,BURN ALL,black)
+%status_effect(targ,Blaze,{SKILL_LEVEL})

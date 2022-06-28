@@ -1,0 +1,9 @@
+#Delay skill macro
+#Data: SKILL_LEVEL (int), OPP_STATUS_SLOT_1 (int?) 
+
+var pc {SKILL_LEVEL}*5
+var rn %range(1,100)
+var rand %random($rn)
+if $rand <= $pc
+	%status_effect(targ,Delay,1)
+endif

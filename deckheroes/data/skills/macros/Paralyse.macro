@@ -1,0 +1,8 @@
+#Paralyse skill macro
+#Data: SKILL_LEVEL (int)
+
+var pc {SKILL_LEVEL}*7
+var rn %random(%range(1,100))
+if $rn<= $pc
+	%status_effect(targ,Handcuffs,1)
+endif

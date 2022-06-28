@@ -1,0 +1,18 @@
+#Cleansweep skill macro
+#Data: ATT (int)
+
+
+%print_text(src,CLEANSWEEP,brown)
+var nc %cardcount(opp)
+if {ATT} < $nc
+	set ATT $nc
+endif
+var i 0
+var dmg {ATT}/$nc
+while $i < $nc
+	%phy_attack($i,$dmg)
+	var i $i+1
+endwhile
+if $nc > 0
+	%status_effect(src,Handcuffs,1)
+endif

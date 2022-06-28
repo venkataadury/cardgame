@@ -1,0 +1,6 @@
+#Revenge skill macro
+#Data: SKILL_LEVEL (int), DAMAGE (int), ATT (int)
+
+var inc {SKILL_LEVEL}*0.1*{DAMAGE}
+set ATT {ATT}+$inc
+%print_text(src,$inc,deep_yellow)
